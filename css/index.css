@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Gamja+Flower&family=Nanum+Pen+Script&family=Noto+Serif+KR&family=Poor+Story&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 상단메뉴 고정 */
+#topmenu {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+/* 배경 이미지 */
+#navbar {
+    background: linear-gradient(rgba(17, 17, 17, 0.2), rgba(1, 55, 14, 0.3)), url(../images/eggs-1694991_1920.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    padding: 20px 20px;
+}
+
+/* 움직이는 로고 */
+@keyframes mymove {
+    from {
+        transform: rotateZ(-5deg);
+    }
+
+    to {
+        transform: scale(150%) rotateZ(5deg);
+    }
+}
+
+.logo {
+    animation: mymove 5s infinite;
+}
+
+/* 메뉴 */
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links ul li {
+    position: relative;
+    margin: 15px 25px;
+}
+
+.navbar-links ul li a {
+    padding: 5px 5px;
+    display: block;
+    font-family: 'Poor Story', cursive;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px yellow;
+    text-align: left;
+}
+
+/* 메뉴 밑줄 효과 */
+.navbar-links ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: yellow;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar-links ul li a:hover::after {
+    width: 100%;
+}
+
+/* 주제글 */
+.heading {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, 20%);
+}
+
+.heading h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Gamja Flower', cursive;
+}
+
+.heading p {
+    color: yellow;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poor Story', cursive;
+}
+
+/* 토글 버튼 */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 35px;
+    height: 21px;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* 중단점 */
+@media screen and (max-width: 768px) {
+    #logo {
+        width: 60px;
+    }
+
+    .heading h2 {
+        font-size: 2rem;
+    }
+
+    .heading p {
+        font-size: 1rem;
+    }
+
+    /* 햄버거 버튼 나타남 */
+    .toggle-button {
+        display: flex;
+    }
+
+    /* 한줄로 된 메뉴 사라짐 */
+    .navbar-links {
+        display: none;
+    }
+
+    #menu {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* 메뉴 표시 */
+    .navbar-links.active {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar-links.active ul {
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .navbar-links.active ul li {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .navbar-links.active ul li a {
+        list-style: none;
+        margin: 0;
+        font-size: 1.2rem;
+        color: yellow;
+        border-top: yellow;
+        border-bottom: yellow;
+    }
+}
+
+#desc {
+    width: 100%;
+}
