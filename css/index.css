@@ -267,9 +267,6 @@ li {
 }
 
 @media screen and (max-width: 768px) {
-    #desc {
-        margin: 5px;
-    }
 
     #textslide {
         flex-direction: column;
@@ -327,7 +324,12 @@ li {
     margin-bottom: 20px;
 }
 
+
 /* 라면 메뉴 */
+#ramen {
+    width: 100%;
+}
+
 #ramen-menu {
     /* background-color: rgba(255, 193, 77, 0.548); */
     width: 70%;
@@ -359,6 +361,7 @@ li {
 }
 
 .menu-desc {
+    width: 100%;
     text-align: center;
     color: white;
     position: absolute;
@@ -371,14 +374,21 @@ li {
 }
 
 .menu-desc h3 {
-    font-size: 30px;
+    font-size: 3em;
     margin-bottom: 10px;
+    opacity: 0;
+}
 
+.menu-desc a {
+    text-decoration: none;
+    color: white;
+    opacity: 0;
 }
 
 .menu-desc p {
-    font-size: 20px;
+    font-size: 2em;
     margin-bottom: 10px;
+    opacity: 0;
 }
 
 .menu-desc hr {
@@ -401,6 +411,12 @@ li {
     opacity: 0.5;
 }
 
+.menu-card:hover a,
+.menu-card:hover h3,
+.menu-card:hover p {
+    color: white;
+    opacity: 1;
+}
 
 .menu-card:hover .menu-desc,
 .menu-card:hover .over {
@@ -454,7 +470,8 @@ li {
         overflow: hidden;
         margin-bottom: 10px;
         border-radius: 20px;
-
+        margin-left: 75px;
+        margin-right: 25px;
     }
 
     .menu-desc {
@@ -573,7 +590,7 @@ li {
     bottom: 30%;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     .around-places {
         width: 100%;
     }
