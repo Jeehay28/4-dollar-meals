@@ -12,28 +12,28 @@ document.addEventListener("scroll", () => {
 });
 
 // 섹션2
-const container = document.querySelector("#container"); // 캐러셀 영역
-const pics = [`pic-1.jpg`, "pic-2.jpg", "pic-3.jpg", "pic-4.jpg", "pic-5.jpg", "pic-6.jpg"];  // 이미지 배열
+const container = document.querySelector("#slide");
+const pics = [`마크정식.png`, "밴쯔정식.png", "불닭게티1.png", "불닭게티2.png", "불새라면1.png", "불새라면2.png", "사리곰탕만둣국.png", "오지치즈후라이.png", "틈새칼국수1.png", "틈새칼국수2.png"];
 
-container.style.backgroundImage = `url(images/${pics[0]})`;  // 첫번째 이미지 기본으로 표시
+container.style.backgroundImage = `url(images/${pics[0]})`;
 
-const arrows = document.querySelectorAll(".arrow");  // 화살표
-let i = 0;  // 배열 인덱스
+const arrows = document.querySelectorAll(".arrow");
+let i = 0;
 
 arrows.forEach(arrow => {
     arrow.addEventListener("click", (e) => {
-        if (e.target.id === "left") {  // 왼쪽 화살표 클릭?
-            i--; // 이전 이미지로 이동
-            if (i < 0) {  // 첫번째 이미지?
-                i = pics.length - 1;  // 맨 마지막 이미지로 이동
+        if (e.target.id === "left") {
+            i--;
+            if (i < 0) {
+                i = pics.length - 1;
             }
         }
-        else if (e.target.id == "right") {  // 오른쪽 화살표 클릭?
-            i++;  // 다음 이미지로 이동
-            if (i >= pics.length) {  // 마지막 이미지?
-                i = 0;  // 첫번째 이미지로 이동
+        else if (e.target.id == "right") {
+            i++;
+            if (i >= pics.length) {
+                i = 0;
             }
         }
-        container.style.backgroundImage = `url(images/${pics[i]})`;  // 현재 이미지 표시
+        container.style.backgroundImage = `url(images/${pics[i]})`;
     });
 });
