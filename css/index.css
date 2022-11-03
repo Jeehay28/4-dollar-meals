@@ -10,7 +10,7 @@
 /* 상단메뉴 고정 */
 #topmenu {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     position: fixed;
@@ -198,6 +198,101 @@ li {
     }
 }
 
+
+/* 소개글 */
+
 #desc {
-    width: 100%;
+    width: 80%;
+    margin: 10px auto;
+    padding-top: 110px;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gamja Flower', cursive;
+}
+
+#box {
+    display: flex;
+    justify-content: space-around;
+}
+
+#intro {
+    flex-basis: 40%;
+}
+
+#para {
+    background-color: rgba(255, 255, 0, 0.5);
+    padding: 30px 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
+
+#para p {
+    font-size: 25px;
+    font-family: 'Poor Story', cursive;
+    overflow-wrap: break-all;
+    line-height: 2em;
+
+}
+
+#container {
+    flex-basis: 60%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+.arrow {
+    z-index: 100;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    color: yellow;
+    background-color: rgba(255, 255, 255, 0.207);
+}
+
+.arrow:hover {
+    background-color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    #box {
+        flex-direction: column;
+    }
+
+    #intro {
+        flex-basis: 100%;
+    }
+
+    #para p {
+        font-size: 12px;
+    }
+
+}
+
+
+
+#ramen {
+    width: 80%;
+    margin: 10px auto;
+    padding-top: 110px;
+    height: 100vh;
+}
+
+#combi {
+    width: 80%;
+    margin: 10px auto;
+    padding-top: 110px;
+    height: 100vh;
 }
