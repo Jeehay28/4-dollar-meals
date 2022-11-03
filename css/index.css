@@ -7,6 +7,7 @@
     scroll-behavior: smooth;
 }
 
+/* 섹션1: 메뉴 */
 /* 상단메뉴 고정 */
 #topmenu {
     width: 100%;
@@ -122,6 +123,10 @@ li {
     font-family: 'Poor Story', cursive;
 }
 
+.heading strong {
+    color: red;
+}
+
 /* 토글 버튼 */
 .toggle-button {
     display: none;
@@ -141,7 +146,7 @@ li {
     background-color: #fff;
 }
 
-/* 중단점 */
+/* 섹션1: 중단점 */
 @media screen and (max-width: 768px) {
     #logo {
         width: 60px;
@@ -199,13 +204,11 @@ li {
     }
 }
 
-
-/* 섹션1 : 소개글 */
+/* 섹션2 : 소개글 */
 #desc {
     text-align: center;
     margin: 10px auto;
     padding-top: 110px;
-    height: 100vh;
     font-family: 'Poor Story', cursive;
 }
 
@@ -235,13 +238,11 @@ li {
 
 .subdesc h2 {
     font-size: 25px;
-    /* font-family: ; */
 }
 
 .subdesc p {
     line-height: 50px;
     font-size: 18px;
-    /* font-family: ; */
 }
 
 #slide {
@@ -267,6 +268,9 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+    #desc {
+        margin: 5px;
+    }
 
     #textslide {
         flex-direction: column;
@@ -293,15 +297,13 @@ li {
 
     #slide {
         width: 100%;
-
     }
 }
-
 
 /* 섹션3: 라면 조합 */
 #ramen {
     width: 100%;
-    margin-bottom: 150px;
+    margin: 10px auto;
 }
 
 #desc-text {
@@ -324,14 +326,8 @@ li {
     margin-bottom: 20px;
 }
 
-
 /* 라면 메뉴 */
-#ramen {
-    width: 100%;
-}
-
 #ramen-menu {
-    /* background-color: rgba(255, 193, 77, 0.548); */
     width: 70%;
     margin: 40px auto;
     display: flex;
@@ -355,13 +351,10 @@ li {
 .menu-card img {
     width: 100%;
     height: 100%;
-    /* width: 650px;
-    height: 400px; */
     transition-duration: 0.75s;
 }
 
 .menu-desc {
-    width: 100%;
     text-align: center;
     color: white;
     position: absolute;
@@ -374,26 +367,26 @@ li {
 }
 
 .menu-desc h3 {
-    font-size: 3em;
+    font-size: 30px;
     margin-bottom: 10px;
-    opacity: 0;
+
+}
+
+.menu-desc p {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .menu-desc a {
     text-decoration: none;
-    color: white;
-    opacity: 0;
+    color: yellow;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    padding: 5px 10px;
 }
 
-.menu-desc p {
-    font-size: 2em;
-    margin-bottom: 10px;
+.menu-desc {
     opacity: 0;
-}
-
-.menu-desc hr {
-    width: 100%;
-    margin-bottom: 10px;
 }
 
 .over {
@@ -411,12 +404,6 @@ li {
     opacity: 0.5;
 }
 
-.menu-card:hover a,
-.menu-card:hover h3,
-.menu-card:hover p {
-    color: white;
-    opacity: 1;
-}
 
 .menu-card:hover .menu-desc,
 .menu-card:hover .over {
@@ -428,19 +415,15 @@ li {
     opacity: 0;
 }
 
-
 @media screen and (max-width:768px) {
 
     #ramen {
         width: 90%;
-        margin: 100px auto;
+        margin: 10px auto;
         border: 1px solid blue;
     }
 
-
     #Ramen-menu {
-
-        /* background-color: rgba(255, 193, 77, 0.548); */
         width: 90%;
         margin: 0;
         align-content: center;
@@ -470,8 +453,6 @@ li {
         overflow: hidden;
         margin-bottom: 10px;
         border-radius: 20px;
-        margin-left: 75px;
-        margin-right: 25px;
     }
 
     .menu-desc {
@@ -491,12 +472,6 @@ li {
     }
 }
 
-
-
-
-
-
-
 /* 섹션4  꿀조합*/
 #combi {
     width: 100%;
@@ -505,15 +480,15 @@ li {
     text-align: center;
 }
 
+.title-text {
+    width: 45%;
+    margin: 10px auto;
+}
+
 .title-text h2 {
     font-size: 50px;
     margin-bottom: 20px;
     color: #666;
-}
-
-.title-text hr {
-    width: 45%;
-    margin: 10px auto;
 }
 
 .title-text p {
@@ -521,7 +496,6 @@ li {
     color: #aaa;
     margin-bottom: 20px;
 }
-
 
 .around-places {
     width: 80%;
@@ -559,6 +533,7 @@ li {
 
 .place-desc {
     color: #fff;
+    text-shadow: 1px 1px 3px black;
     width: 80%;
     position: absolute;
     bottom: 0;
@@ -607,7 +582,6 @@ li {
         font-size: 14px;
     }
 }
-
 
 /* 푸터 */
 footer {
@@ -664,7 +638,7 @@ footer {
     font-style: italic;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     footer {
         width: 100%;
     }
