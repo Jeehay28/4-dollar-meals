@@ -133,23 +133,41 @@ li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 35px;
-    height: 21px;
+    width: 40px;
+    height: 30px;
     position: fixed;
-    top: 1em;
-    right: 1em;
+    top: 1.5em;
+    right: 1.2em;
 }
 
 .bar {
-    height: 3px;
+    height: 7px;
     width: 100%;
-    background-color: #fff;
+    background-color: yellow;
 }
 
 /* 섹션1: 중단점 */
 @media screen and (max-width: 768px) {
     #logo {
-        width: 60px;
+        width: 30%;
+    }
+
+    @keyframes mymove {
+        from {
+            transform: scale(90%);
+        }
+
+        to {
+            transform: scale(90%);
+        }
+    }
+
+    .logo img {
+        padding-top: 5px;
+    }
+
+    #menu {
+        height: 80px;
     }
 
     .heading h2 {
@@ -272,10 +290,15 @@ li {
         margin: 5px;
     }
 
+    #desc h2 {
+        font-size: 2rem;
+    }
+
     #textslide {
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
+
     }
 
     .subdesc {
@@ -287,16 +310,18 @@ li {
     }
 
     .subdesc h2 {
-        font-size: 25px;
+        font-size: 2rem;
     }
 
     .subdesc p {
         line-height: 40px;
-        font-size: 18px;
+        font-size: 1.5rem;
     }
 
     #slide {
         width: 100%;
+        background: no-repeat center;
+
     }
 }
 
@@ -355,6 +380,7 @@ li {
 }
 
 .menu-desc {
+    width: 100%;
     text-align: center;
     color: white;
     position: absolute;
@@ -367,13 +393,13 @@ li {
 }
 
 .menu-desc h3 {
-    font-size: 30px;
+    font-size: 1.2em;
     margin-bottom: 10px;
 
 }
 
 .menu-desc p {
-    font-size: 20px;
+    font-size: 1.1em;
     margin-bottom: 10px;
 }
 
@@ -429,17 +455,17 @@ li {
     }
 
     #desc-text {
-        width: 80%;
+        width: 100%;
     }
 
     #desc-text h2 {
-        font-size: 30px;
+        font-size: 2rem;
         margin-bottom: 3px;
         color: #666;
     }
 
     #desc-text p {
-        font-size: 18px;
+        font-size: 1.5rem;
         color: #aaa;
         margin-bottom: 3px;
     }
@@ -457,19 +483,21 @@ li {
     .menu-desc {
         bottom: -150%;
         left: 50%;
-        top: 50%;
+        top: 35%;
+        width: 100%;
     }
 
     .menu-desc h3 {
-        font-size: 25px;
-        margin-bottom: 20px;
+        font-size: 1em;
+        margin-bottom: 1em;
     }
 
     .menu-desc p {
-        font-size: 15px;
-        margin-bottom: 3px;
+        font-size: 1em;
+        margin-bottom: 0.3em;
     }
 }
+
 
 /* 섹션4  꿀조합*/
 #combi {
@@ -565,6 +593,15 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+
+    .title-text h2 {
+        font-size: 2rem;
+    }
+
+    .title-text p {
+        font-size: 1.5rem;
+    }
+
     .around-places {
         width: 100%;
     }
@@ -635,6 +672,10 @@ footer {
     color: black;
     text-align: center;
     font-style: italic;
+}
+
+.copyright p {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
