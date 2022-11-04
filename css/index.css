@@ -559,8 +559,7 @@ li {
 }
 
 .place-desc {
-    color: #fff;
-    text-shadow: 1px 1px 3px black;
+    color: black;
     width: 80%;
     position: absolute;
     bottom: 0;
