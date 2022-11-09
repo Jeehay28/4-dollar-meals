@@ -2,11 +2,14 @@
   
 <h1 align="center">
   <p align="center">🍜 반응형 웹사이트 프로젝트 </p>
-  <a href="https://docusaurus.io">
-    <img width="50%" src="images/4-dollar-meal.gif" alt="반응형웹사이트" />
+  <a href="jeehay28.github.io/4-dollar-meals/">
+    <img width="80%" src="images/4-dollar-meal.gif" alt="반응형웹사이트" />
   </a>
-  <br> 
+ </h1>
 </div>
+
+<br>
+<br>
 
 ## 💡 Introduction
 
@@ -41,9 +44,13 @@
   > 꿀조합 & 푸터(김도연) : 사진, 설명, 조리법, 마우스오버 효과
 
 
+<br> 
+<br> 
+
 ## 🎨 Development
+
 - **레이아웃**
-![](images/design.png)
+  > ![](images/design.png)
 
 - **섹션별 ID**
 ``` 
@@ -75,6 +82,9 @@
 
   > 글자 색은 되도록 검정 또는 흰색을 사용하고 효과 적용 시에만 노란색 또는 빨간색 사용
 
+
+<br> 
+<br> 
 
 ## ✅ Completion
 - **메인 페이지**
@@ -123,6 +133,9 @@
 
   > 중단점(768px) 이하 레이아웃 변경
 
+
+<br> 
+<br> 
 
 ## 👏 Evaluation
 - 팀원 간 평가의견
